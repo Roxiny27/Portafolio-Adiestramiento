@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adiestramiento Canino</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Adiestramiento Canino</h1>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#testimonios">Testimonios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="inicio">
+        <h2>Bienvenido a nuestro servicio de adiestramiento</h2>
+        <p>Ofrecemos un enfoque amigable y efectivo para educar a tu mascota.</p>
+        <img src="perros.jpg" alt="Toda clase de razas" class="imagen-inicio">
+    </section>
+    </section>
+    
+    <section id="servicios">
+        <h2>Nuestros Servicios</h2>
+        <ul>
+            <li>Entrenamiento básico</li>
+            <li>Modificación de conducta</li>
+            <li>Socialización</li>
+            <li>Socialización de cachorros</li>
+        </ul>
+    </section>
+    
+    <section id="testimonios">
+        <h2>Testimonios</h2>
+        <div class="testimonios-slider">
+            <div class="testimonial">
+                <p>"Mi perro ahora es mucho más obediente, ¡increíble!" - Cliente feliz</p>
+            </div>
+            <div class="testimonial">
+                <p>"El entrenamiento fue muy efectivo, recomiendo totalmente los servicios." - Otro cliente</p>
+            </div>
+            <div class="testimonial">
+                <p>"Excelente trato y resultados. Mi perro está mucho mejor." - Cliente satisfecho</p>
+            </div>
+        </div>
+        <script>
+            let currentIndex = 0;
+            const testimonios = document.querySelectorAll('.testimonial');
+            const totalTestimonios = testimonios.length;
+        
+            setInterval(function() {
+                testimonios[currentIndex].style.display = 'none';
+                currentIndex = (currentIndex + 1) % totalTestimonios;
+                testimonios[currentIndex].style.display = 'block';
+            }, 3000); // Cambiar cada 3 segundos
+        </script>
+    </section>
+    
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <script>
+            document.querySelector('form').addEventListener('submit', function(event) {
+                const nombre = document.getElementById('nombre').value;
+                const email = document.getElementById('email').value;
+                const mensaje = document.getElementById('mensaje').value;
+        
+                if (!nombre || !email || !mensaje) {
+                    alert('Por favor, complete todos los campos.');
+                    event.preventDefault(); // Evita que el formulario se envíe
+                }
+            });
+        </script>
+        <form>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" required></textarea>
+            
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Adiestramiento Canino - Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

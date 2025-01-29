@@ -1,0 +1,145 @@
+/* Reset de estilos básicos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Cabecera */
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+/* Navegación */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+/* Sección de Inicio */
+#inicio {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+#inicio h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Sección de Servicios */
+#servicios {
+    padding: 40px 20px;
+    background-color: #e7f7e7;
+}
+
+#servicios h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Listado de servicios */
+#servicios ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+}
+
+#servicios ul li {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 30%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Testimonios */
+#testimonios {
+    padding: 40px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+/* Sección de contacto */
+#contacto {
+    padding: 40px 20px;
+    background-color: #e7f7e7;
+}
+
+#contacto form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#contacto label {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+#contacto input, #contacto textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#contacto button {
+    padding: 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#contacto button:hover {
+    background-color: #45a049;
+}
+
+/* Pie de página */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+/*Imagen de cabecera */
+.imagen-inicio {
+    width: 50%;
+    max-width: 300px;
+    display: block;
+    margin: 20px auto;
+    border-radius: 8px;
+}
