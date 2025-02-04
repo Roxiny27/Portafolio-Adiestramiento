@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¿Quién soy? - Adiestramiento Canino</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Asegúrate de enlazar tu CSS -->
+</head>
+<body>
+
+    <header>
+        <h1>¿Quién soy?</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="quien-soy">
+        <div class="quien-soy-contenedor">
+            <img src="mi-foto.jpg" alt="Foto de Rocío" class="quien-soy-imagen">
+            <div class="quien-soy-texto">
+                <h2>Hola, soy Rocío</h2>
+                <p>Soy una apasionada de los animales con más de 10 años de experiencia en el adiestramiento canino. Ayudo a perros y dueños a comunicarse mejor mediante técnicas de refuerzo positivo y un enfoque basado en la confianza y el respeto.</p>
+                <p>Desde pequeña, los perros han sido mi gran pasión. Con el tiempo, me formé profesionalmente para convertir este amor en mi vocación. Hoy, mi misión es ayudarte a entender y educar a tu mascota para que ambos disfruten de una convivencia armoniosa.</p>
+                <p>Si quieres mejorar la relación con tu perro, estaré encantada de ayudarte.</p>
+            
+            </div>
+        </div>
+        <section id="certificados">
+            <h2>Certificado profesional</h2>
+            <div class="certificado">
+                <img src="certificado1.jpg" alt="Certificado de adiestramiento">
+                <p>Certificado de la Comunidad de Madrid en Adiestramiento Canino.</p>
+            </div>
+           
+        </section>
+    </section>
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <form action="enviar-formulario.php" method="POST">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+        </section>
+
+    <footer>
+        <p>&copy; 2025 Adiestramiento Canino - Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>

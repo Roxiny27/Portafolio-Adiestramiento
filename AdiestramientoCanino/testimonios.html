@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Testimonios</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Testimonios</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="formulario-testimonios">
+        <h2>¡Déjanos tu Testimonio!</h2>
+        <form id="formTestimonio">
+            <label for="nombre">Tu nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="comentario">Tu Testimonio:</label>
+            <textarea id="comentario" name="comentario" rows="4" required></textarea>
+
+            <button type="submit">Enviar Testimonio</button>
+        </form>
+    </section>
+
+    <section id="testimonios-lista">
+        <h2>Testimonios Recientes</h2>
+        <div id="testimonios"></div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Adiestramiento Canino - Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
